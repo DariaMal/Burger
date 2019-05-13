@@ -296,7 +296,7 @@ footer {
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
   padding: 45px 5% 10px;
-  color: white;
+  color: #fff;
   opacity: 0;
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
