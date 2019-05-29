@@ -1,7 +1,7 @@
 .section-title{
-    font-size: 72px;
+    font-size: rem(72px);
     @include gagalin();
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
     line-height: 1;
     color: $yellow;
 
@@ -11,5 +11,9 @@
 
     &--centered {
         text-align: center;
+    }
+
+    &--color-white {
+        color: #ffffff;
     }
 }

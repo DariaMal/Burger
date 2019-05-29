@@ -7,13 +7,19 @@
     flex: .8;
     display: flex;
     align-items: center;
+
+    @include tablets{
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
 }
 
 .hero__desc{
-    font-size: 65px;
+    font-size: rem(65px);
     @include lifehack;
     line-height: 1;
     color: #fff;
+    
 }
 
 .hero__container{
@@ -21,7 +27,12 @@
 }
 
 .hero__content-text{
-    margin-bottom: -80px;
+    margin-bottom: rem(-80px);
+
+    @include tablets{
+        /*margin-bottom: rem(80px);*/
+        text-align: center;
+    }
 }
 
 .hero__content-image{
