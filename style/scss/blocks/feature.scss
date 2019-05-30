@@ -2,6 +2,14 @@
     display: flex;
     justify-content: center;
     margin-bottom: rem(10px);
+    
+
+    @include phones{
+        margin-bottom: 0px;        
+        width: rem(180px);
+        
+    }
+
 }
 
 
@@ -10,6 +18,7 @@
 
     @include phones{
         text-align: left;
+        flex: 1 1;
     }
 
     p {
