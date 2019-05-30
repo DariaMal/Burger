@@ -8,6 +8,10 @@
 .feature__desc{
     text-align: center;
 
+    @include phones{
+        text-align: left;
+    }
+
     p {
         font-size: rem(14px);
         @include ubuntu($style: light);

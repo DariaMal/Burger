@@ -18,6 +18,10 @@
       flex-direction: column;
       padding: 0 15%;
     }
+
+    @include phones{    
+      padding:0;
+    }
   }
 
   .order__form-tag{
@@ -93,6 +97,8 @@
     margin-right: rem(20px);
     @include inlineblock(middle);
     cursor: pointer;
+
+   
   }
 
   .order__radio-title {
@@ -121,4 +127,13 @@
     text-transform: none;
     background: transparent;
   }  
+
+  .order__form-buttons {
+    @include phones {
+      .order__form-row {
+        justify-content: center;
+        margin-bottom: rem(30px);
+      }
+    }
+  }
   

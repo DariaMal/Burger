@@ -38,15 +38,21 @@
         text-align: center;
     }
 
-    &.active {
+    &.active { 
         .team__trigger {
+            color: $yellow;
+
             &:before {
                 display: none;
+                
             }
             &:after {
                 display: block;
+                
             }
         }
+
+       
 
         .team__content {
             display: block;

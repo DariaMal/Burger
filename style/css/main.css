@@ -483,6 +483,9 @@ footer {
   font-family: 'Lifehack-Medium';
   line-height: 1;
   color: #fff; }
+  @media screen and (max-width: 480px) {
+    .hero__desc {
+      font-size: 3.375rem; } }
 
 .hero__container {
   -webkit-box-pack: start;
@@ -599,6 +602,9 @@ footer {
   margin-bottom: 3.125rem;
   line-height: 1;
   color: #f9b43b; }
+  @media screen and (max-width: 480px) {
+    .section-title {
+      font-size: 3.125rem; } }
   .section-title--color-black {
     color: #2f3234; }
   .section-title--centered {
@@ -625,12 +631,24 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .best__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .best__item {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
   margin-right: 2.25rem; }
+  @media screen and (max-width: 480px) {
+    .best__item {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
   .best__item:last-child {
     margin-right: 0; }
 
@@ -648,6 +666,9 @@ footer {
 
 .feature__desc {
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    .feature__desc {
+      text-align: left; } }
   .feature__desc p {
     font-size: 0.875rem;
     font-family: 'Ubuntu', Helvetica, sans-serif;
@@ -676,6 +697,10 @@ footer {
     .reviews__item {
       width: 50%;
       height: auto; } }
+  @media screen and (max-width: 480px) {
+    .reviews__item {
+      width: 50%;
+      height: 25%; } }
 
 .review__avatar {
   max-width: 100%;
@@ -687,6 +712,10 @@ footer {
 @media screen and (max-width: 768px) {
   .reviews {
     height: auto; } }
+
+@media screen and (max-width: 480px) {
+  .reviews {
+    height: 100vh; } }
 
 .review__avatar {
   -o-object-fit: cover;
@@ -720,10 +749,18 @@ footer {
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   margin-bottom: 1.5625rem;
   font-size: 0.875rem; }
+  @media screen and (max-width: 480px) {
+    .review__title {
+      font-size: 1.5rem; } }
 
 .review__text {
   font-size: 0.875rem;
-  margin-bottom: 1.125rem; }
+  margin-bottom: 1.125rem;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300; }
+  @media screen and (max-width: 480px) {
+    .review__text {
+      display: none; } }
 
 .fix-menu {
   list-style: none;
@@ -793,10 +830,12 @@ footer {
   @media screen and (max-width: 768px) {
     .team__item {
       text-align: center; } }
-  .team__item.active .team__trigger:before {
-    display: none; }
-  .team__item.active .team__trigger:after {
-    display: block; }
+  .team__item.active .team__trigger {
+    color: #f9b43b; }
+    .team__item.active .team__trigger:before {
+      display: none; }
+    .team__item.active .team__trigger:after {
+      display: block; }
   .team__item.active .team__content {
     display: block;
     display: -webkit-box;
@@ -1004,6 +1043,9 @@ footer {
       -ms-flex-direction: column;
       flex-direction: column;
       padding: 0 15%; } }
+  @media screen and (max-width: 480px) {
+    .order__form {
+      padding: 0; } }
 
 .order__form-tag {
   display: -webkit-box;
@@ -1099,6 +1141,13 @@ footer {
   text-transform: none;
   background: transparent; }
 
+@media screen and (max-width: 480px) {
+  .order__form-buttons .order__form-row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 1.875rem; } }
+
 .yandex-map {
   background: url("../../img/bg/map.jpg") no-repeat;
   background-size: cover;
@@ -1131,10 +1180,23 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 480px) {
+    .footer__container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .footer__col {
   width: 50%;
   margin-bottom: 0.9375rem; }
+  @media screen and (max-width: 480px) {
+    .footer__col {
+      width: 100%;
+      text-align: center; } }
 
 .footer__address {
   color: #ffffff;
@@ -1149,7 +1211,18 @@ footer {
 
 .footer__col_right {
   text-align: right;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  @media screen and (max-width: 480px) {
+    .footer__col_right {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .burger-btn {
   margin-left: 1.875rem;

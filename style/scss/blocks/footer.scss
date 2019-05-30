@@ -11,12 +11,22 @@
 .footer__container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+	align-items: center;
+	
+	@include phones{
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .footer__col {
 	width: 50%;
-    margin-bottom: rem(15px);
+	margin-bottom: rem(15px);
+	
+	@include phones{
+		width: 100%;
+		text-align: center;
+	}
 }
 
 .footer__address {
@@ -33,4 +43,11 @@
 
 .footer__col_right {
 	text-align: right;
-	margin-bottom: 0;}
+	margin-bottom: 0;
+	display: flex;
+	justify-content: flex-end;
+
+	@include phones{
+		justify-content: center;
+	}
+}
