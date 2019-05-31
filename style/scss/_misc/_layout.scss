@@ -38,6 +38,10 @@ body{
 .section{
     height: 100vh;
     min-height: 650px;
+
+    @include tablets{
+        min-height: 0;
+    }
 }
 
 .container{

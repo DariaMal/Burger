@@ -41,4 +41,12 @@
 
 .hero__content-image{
     max-width: 100%;
+
+    img {
+        @include tablets{
+            width: 100%;
+        }
+    }
+
+    
 }

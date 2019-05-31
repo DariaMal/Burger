@@ -408,6 +408,9 @@ body {
 .section {
   height: 100vh;
   min-height: 650px; }
+  @media screen and (max-width: 768px) {
+    .section {
+      min-height: 0; } }
 
 .container {
   max-width: 940px;
@@ -501,6 +504,9 @@ footer {
 
 .hero__content-image {
   max-width: 100%; }
+  @media screen and (max-width: 768px) {
+    .hero__content-image img {
+      width: 100%; } }
 
 .header {
   display: -webkit-box;
@@ -775,6 +781,9 @@ footer {
   position: fixed;
   top: 5.625rem;
   right: 3rem; }
+  @media screen and (max-width: 768px) {
+    .fix-menu {
+      display: none; } }
 
 .fix-menu__item {
   width: 1rem;
@@ -1155,6 +1164,50 @@ footer {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 1.875rem; } }
+
+.order__radio-second {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+  .order__radio-second:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0rem;
+    height: 0rem;
+    border-radius: 50%;
+    background: #e35028;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: width .3s, height .3s;
+    -o-transition: width .3s, height .3s;
+    transition: width .3s, height .3s; }
+
+.order__radio-elem:checked + .order__radio-second:after {
+  width: 0.5rem;
+  height: 0.5rem; }
+
+.order__radio_checkbox .order__radio-second {
+  border-radius: 0rem; }
+
+.order__radio_checkbox .order__radio-elem + .order__radio-second:after {
+  background: transparent; }
+
+.order__radio_checkbox .order__radio-elem:checked + .order__radio-second:after {
+  background: url("../../img/icons/check.svg") 50% no-repeat transparent;
+  background-size: contain;
+  width: 0.6875rem;
+  height: 0.5625rem; }
+
+.order__radio-elem {
+  display: none; }
 
 .yandex-map {
   background: url("../../img/bg/map.jpg") no-repeat;
