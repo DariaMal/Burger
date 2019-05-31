@@ -62,6 +62,12 @@
     border: rem(1px) solid #d1cfcb;
     border-radius: rem(5px);
     width: 100%;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    &:focus {
+      border: 2px solid #f9b43b;
+      outline: none;
+    }
   }
   
   .order__form-block {
@@ -172,23 +178,16 @@
   .order__radio_checkbox {
     .order__radio-second {
       border-radius: rem(0px);
-    }
-    .order__radio-elem {
-     
-      &+.order__radio-second {
-        &:after {
-          background: transparent;
-        }
+      &:after {
+        background: transparent;
       }
     }
     .order__radio-elem:checked {
-      &+.order__radio-second {
-        &:after {
-          background: url("../../img/icons/check.svg") 50% no-repeat transparent;
-          background-size: contain;
-          width: rem(11px);
-          height: rem(9px);
-        }
+      &+.order__radio-second:after {
+        background: url("../../img/icons/check.png") 50% no-repeat;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
       }
     }
   }
