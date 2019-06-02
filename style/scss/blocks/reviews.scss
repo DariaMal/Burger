@@ -1,5 +1,6 @@
 .reviews__list{
     height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -7,8 +8,34 @@
 .reviews__item{
     width: 25%;
     height: 50%;
+    position: relative;
+
+    @include tablets{
+    width: 50%;
+    height: auto;
+    }
+
+    @include phones{
+        width: 50%;
+        height: 25%;
+        }
 }
 
 .review__avatar{
     max-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.reviews{
+    
+    @include tablets{
+    height: auto;
+    }
+
+    @include phones{
+        height: 100vh;
+    }
 }

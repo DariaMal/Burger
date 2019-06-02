@@ -7,13 +7,27 @@
     flex: .8;
     display: flex;
     align-items: center;
+
+    @include tablets{
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
 }
 
 .hero__desc{
-    font-size: 65px;
+    font-size: rem(65px);
     @include lifehack;
     line-height: 1;
     color: #fff;
+
+    @include phones{
+        font-size: rem(40px);
+    }
+
+    @include phones-mini{
+        font-size: rem(30px);
+    }
+    
 }
 
 .hero__container{
@@ -21,9 +35,31 @@
 }
 
 .hero__content-text{
-    margin-bottom: -80px;
+    margin-bottom: rem(-80px);
+
+    @include tablets{
+        text-align: center;
+    }
 }
 
 .hero__content-image{
     max-width: 100%;
+    margin-bottom: rem(30px);
+
+    img {
+        @include tablets{
+            width: 100%;
+        }
+    }
+
+    img {
+        @include phones{
+            width: 80%;
+        }
+    }
+
+    @include phones{
+        text-align: center;
+    }
+
 }

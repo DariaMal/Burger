@@ -1,0 +1,22 @@
+.burger-btn{
+    margin-left: rem(30px);
+    width: rem(24px);
+    cursor: pointer;
+    
+    .burger-btn-line:last-child {
+        margin-bottom: 0;
+    }
+
+    display: none;
+
+    @include tablets {
+        display: inline-block;
+    }
+}
+
+.burger-btn-line{
+    height: 4px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}

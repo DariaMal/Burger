@@ -1,11 +1,16 @@
 .down-arrow{
     display: block;
-    width: 50px;
-    height: 50px;
+    width: rem(28px);
+    height: rem(14px);
     position: absolute;
-    bottom: 40px;
+    bottom: rem(40px);
     left: 50%;
     /*transform: translateX(-50%);*/
     background-image: url(../../img/icons/arrow-scroll.svg);
     background-repeat: no-repeat;
+    background-size: contain;
+
+    @include tablets{
+        bottom: rem(30px);
+    }
 }

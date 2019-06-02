@@ -1,3 +1,16 @@
+html{
+    font-size: 16px;
+
+    @include tablets{
+        font-size: 15px;
+    }
+
+    @include phones{
+        font-size: 13px;
+    }
+}
+
+
 html,
 body{
     height: 100%;
@@ -19,15 +32,21 @@ body{
     position: relative;
     width: 100%;
     overflow: hidden;
+    min-height: 100%;
 }
 
 .section{
     height: 100vh;
     min-height: 650px;
+
+    @include tablets{
+        min-height: 0;
+    }
 }
 
 .container{
-    width: 940px;
+    max-width: 940px;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
