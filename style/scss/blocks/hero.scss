@@ -23,6 +23,10 @@
     @include phones{
         font-size: rem(40px);
     }
+
+    @include phones-mini{
+        font-size: rem(30px);
+    }
     
 }
 
@@ -34,13 +38,13 @@
     margin-bottom: rem(-80px);
 
     @include tablets{
-        /*margin-bottom: rem(80px);*/
         text-align: center;
     }
 }
 
 .hero__content-image{
     max-width: 100%;
+    margin-bottom: rem(30px);
 
     img {
         @include tablets{
@@ -48,5 +52,14 @@
         }
     }
 
-    
+    img {
+        @include phones{
+            width: 80%;
+        }
+    }
+
+    @include phones{
+        text-align: center;
+    }
+
 }

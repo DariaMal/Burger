@@ -59,6 +59,10 @@
             display: flex;
         }
     }
+
+    @include phones-mini{
+        margin-bottom: rem(15px);
+    }
 }
   
 .team__trigger {
@@ -74,6 +78,12 @@
         display: inline-flex;
         font-size: rem(24px);
       }
+
+      @include phones-mini{
+        font-size: rem(20px);
+      }
+
+
   
       &:before, &:after {
         content: "";

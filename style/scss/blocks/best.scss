@@ -13,7 +13,11 @@
     @include phones{
         display: flex;
         margin-right: 0;
-        margin-bottom: rem(43px)
+        margin-bottom: rem(50px)
+    }
+
+    @include phones-mini{
+        margin-bottom: rem(20px)
     }
 
     &:last-child{

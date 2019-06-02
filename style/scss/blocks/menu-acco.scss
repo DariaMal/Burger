@@ -91,6 +91,12 @@
 	padding: rem(60px) rem(30px);
 	width: 100%;
     line-height: 1.8;
-    display: none;
+	display: none;
+	
+	@include phones-mini{
+		font-size: rem(12px);
+		padding: rem(10px) rem(10px);
+		line-height: 1.1;
+      }
 
 }
