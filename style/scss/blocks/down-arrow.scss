@@ -5,7 +5,6 @@
     position: absolute;
     bottom: rem(40px);
     left: 50%;
-    /*transform: translateX(-50%);*/
     background-image: url(../../img/icons/arrow-scroll.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -13,4 +12,29 @@
     @include tablets{
         bottom: rem(30px);
     }
+}
+
+.left-arrow{
+    display: block;
+    width: rem(17px);
+    height: rem(29px);
+    left: 5%;
+    position: absolute;
+    background-image: url(../../img/icons/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+
+}
+
+.right-arrow{
+    display: block;
+    width: rem(17px);
+    height: rem(29px);
+    left: 95%;
+    position: absolute;
+    background-image: url(../../img/icons/arrow-right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
 }

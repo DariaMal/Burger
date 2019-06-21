@@ -28,4 +28,19 @@
     &--color-white {
         color: #ffffff;
     }
+
+    &--color-red {
+        color: #e35028;
+        font-size: rem(71px);
+          
+        
+    }
+
+    &--color-red-small {
+        color: #e35028;
+        font-size: rem(30px);
+        margin-right: rem(29px);
+        margin-left: rem(7px);
+        
+    }
 }
