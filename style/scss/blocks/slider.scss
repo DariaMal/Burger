@@ -1,0 +1,139 @@
+.slider{
+    background: linear-gradient(to bottom, #f9b43b, #eb8c38, #f9b43b);
+}
+
+.slider__content{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    @include tablets{
+        margin: 0 100px;
+    }
+
+    @include phones{
+        margin: 0;
+    }
+    
+}
+
+.slider__title-text{
+    @include ubuntu(light);
+    font-size: rem(15px);
+    color: white;
+    margin-bottom: 30px;
+    line-height: rem(25px);
+   
+}
+
+
+
+.slider__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex: 0 0 100%;
+    position: relative;
+    padding: 40px 0 25px 0;
+
+    @include tablets{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 90px;
+        
+    }
+}
+
+.slider__items{
+    display: flex;
+    position: relative;
+    will-change: right;
+    width: 100%; 
+    transition: right 0.3s ease;
+    right: 0;
+
+    
+}
+
+.slider__icon-burger{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slider__icon-kkal{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.burger-icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slider__title-price{
+    display: flex;
+    align-items: baseline;
+
+    @include tablets{
+        justify-content: center;
+    }
+    
+}
+
+.kkal{
+    background: url(../../img/icons/kkal.svg) no-repeat ;
+    width: rem(64px);
+    min-height: rem(63px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    @include gagalin;
+    font-size: 18px;
+    color: #fff;
+    background-position:center;
+    padding-top: rem(47px);
+
+
+    @include tablets{
+        left: auto;
+        right: 0;
+        top: 0;
+        bottom: auto;
+    }
+}
+
+.kkal-label{
+    margin-top: rem(7px);
+    font-size: rem(15px);
+}
+
+.consist{
+    @include gagalin;
+    color: #fff;
+    font-size: rem(14px);
+
+}
+
+.burger-icon-consist{
+    padding: 13px 24px;
+    border-radius: 5px;
+    background: #f08c33;
+    position: relative;
+}
+
+.slider_img{
+    img{
+        @include tablets{
+            max-width: 100%;
+        }
+
+        @include phones-mini{
+            max-width: 50%;
+        }
+    }
+}

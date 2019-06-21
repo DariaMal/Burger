@@ -9,6 +9,11 @@
     text-transform: uppercase;
     text-decoration: none;
 
+    @include tablets {
+        font-size: rem(25px);
+        
+	}
+
 }
 
 .menu__item{
@@ -45,7 +50,9 @@
 	display: none;
 
 	@include tablets {
-		display: inline-flex;
+        display: inline-flex;
+        font-size: rem(25px);
+        
 	}
 }
 

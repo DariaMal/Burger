@@ -12,7 +12,42 @@
 
 <body>
     <div class="wrapper">
-        <section class="section hero">
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="hamburger-menu__logo">
+                <a class="logo" href="#">
+                    <img src="./img/icons/logo.svg">
+                </a>
+            </div>
+            <div class="hamburger-menu__items">
+                <nav class="menu_hamburger">
+                    <ul class="hamburger-menu__list">
+                        <li class="hamburger-menu__item">
+                            <a class="menu__link" href="#hero" data-scroll-to="1">о нас</a>
+                        </li>
+                        <li class="hamburger-menu__item">
+                            <a class="menu__link" href="#burgers" data-scroll-to="2">бургеры</a>
+                        </li>
+                        <li class="hamburger-menu__item">
+                            <a class="menu__link" href="#team" data-scroll-to="3">команда</a>
+                        </li>
+                        <li class="hamburger-menu__item">
+                            <a class="menu__link" href="#accord" data-scroll-to="4">меню</a>
+                        </li>
+                        <li class="hamburger-menu__item">
+                            <a class="menu__link" href="#reviews" data-scroll-to="5">отзывы</a>
+                        </li>
+                        <li class="hamburger-menu__item">
+                            <a class="menu__link" href="#contacts" data-scroll-to="7">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a id="close-menu" class="hamburger-menu__close" href="#">
+                <img src="./img/icons/close.png" alt="">
+            </a>
+                    
+        </div>
+        <section class="section hero" id="hero">
             <div class="container hero__container">
                 <header class="header">
                     <img src="./img/icons/logo.svg" alt="burger logo" class="logo">                
@@ -20,30 +55,30 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">О нас</a>
+                                    <a href="#hero" class="menu__link">О нас</a>
                                 </li>
                                 <li class="menu__item">
-                                        <a href="#" class="menu__link">Бургеры</a>
+                                        <a href="#burgers" class="menu__link">Бургеры</a>
                                 </li>
                                 <li class="menu__item">
-                                        <a href="#" class="menu__link">Команда</a>
+                                        <a href="#team" class="menu__link">Команда</a>
                                 </li>
                                 <li class="menu__item">
-                                        <a href="#" class="menu__link">Меню</a>
+                                        <a href="#accord" class="menu__link">Меню</a>
                                 </li>
                                 <li class="menu__item">
-                                        <a href="#" class="menu__link">Отзывы</a>
+                                        <a href="#reviews" class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                        <a href="#" class="menu__link">Как мы работаем</a>
+                                        <a href="#work" class="menu__link">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
-                                        <a href="#" class="menu__link">Контакты</a>
+                                        <a href="#contacts" class="menu__link">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
                         <a href="" class="btn header__btn">Заказать</a>
-                        <div class="burger-btn">
+                        <div class="burger-btn" id="burger-btn">
                             <div class="burger-btn-line"></div>
                             <div class="burger-btn-line"></div>
                             <div class="burger-btn-line"></div>
@@ -62,7 +97,7 @@
                 <a href="" class="down-arrow"></a>
             </div>
         </section>
-        <section class="section best">
+        <section class="section best" id="best">
             <div class="container">
                 <h2 class="section-title section-title--color-black section-title--centered">Мы лучшие</h2>
                 <ul class="best__list">
@@ -115,16 +150,159 @@
             </div>
         </section>
 
-        <section class="section team">
-            <div class="team__section">
+        <section class="section slider" id="burgers">
+            <div class="container">
+                <a href="" class="left-arrow" id="left"></a>
+                <div class="slider__content">
+                    <div class="slider__items" id="items">
+                        <div class="slider__item">
+                            <div class="slider__icon">
+                                <div class="burger-icon">
+                                    <div class="burger-icon-consist">
+                                        <img src="./img/icons/burger.svg" alt="">
+                                        <div class="consist">
+                                            состав
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                <div class="kkal">
+                                    1200
+                                    <div class="kkal-label">
+                                        ккал
+                                    </div>
+                                </div>                             
+                                
+                            </div>                    
+                            <div class="slider_img">
+                                <img src="./img/content/burger2.png" alt="">        
+                            </div>
+                            <div class="slider__content-text">
+                                <div class="section-title section-title--color-white">
+                                    Dark beef burger
+                                </div>
+                                <div class="slider__title">
+                                    <p class="slider__title-text">
+                                        Ваш старый добрый знакомый, с рубленым бифштексом
+                                        из 100% говядины,темя кусочками нежнейшего сыра
+                                        эмменталь,двумя помидорами,луком, салатом и соусом гриль
+                                        теперь с добавлением экзотического соуса чураско.
+                                    </p>
+                                    <div class="slider__title-price">
+                                        <h3 class="section-title section-title--color-red">
+                                            500<span class="section-title section-title--color-red-small">рублей</span>
+                                        </h3>
+                                        <a href="" class="btn">Заказать 1</a>
+                                    </div>                                    
+                                    
+                                </div>                       
+                                    
+                            </div>       
+                        </div>
+                        
+                        <div class="slider__item">
+                            <div class="slider__icon">
+                                <div class="burger-icon">
+                                    <div class="burger-icon-consist">
+                                        <img src="./img/icons/burger.svg" alt="">
+                                        <div class="consist">
+                                            состав
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="kkal">
+                                    1200
+                                    <div class="kkal-label">
+                                        ккал
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="slider_img">
+                                <img src="./img/content/burger2.png" alt="">        
+                            </div>                   
+                                 
+                            <div class="slider__content-text">
+                                <div class="section-title section-title--color-white">
+                                    Dark beef burger
+                                </div>
+                                <div class="slider__title">
+                                    <p class="slider__title-text">
+                                        Ваш старый добрый знакомый, с рубленым бифштексом
+                                        из 100% говядины,темя кусочками нежнейшего сыра
+                                        эмменталь,двумя помидорами,луком, салатом и соусом гриль
+                                        теперь с добавлением экзотического соуса чураско.
+                                    </p>
+                                    <div class="slider__title-price">
+                                        <h3 class="section-title section-title--color-red">
+                                            500<span class="section-title section-title--color-red-small">рублей</span>
+                                        </h3>
+                                        <a href="" class="btn">Заказать 2</a>
+                                    </div>    
+                                </div>                       
+                                        
+                            </div>       
+                        </div>
+                        
+                        <div class="slider__item">
+                            <div class="slider__icon">
+                                <div class="burger-icon">
+                                    <div class="burger-icon-consist">
+                                        <img src="./img/icons/burger.svg" alt="">
+                                        <div class="consist">
+                                            состав
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="kkal">
+                                    1200
+                                    <div class="kkal-label">
+                                        ккал
+                                    </div>
+                                </div>                              
+                            </div>                    
+                            <div class="slider_img">
+                                <img src="./img/content/burger2.png" alt="">        
+                            </div>
+                            <div class="slider__content-text">
+                                <div class="section-title section-title--color-white">
+                                    Dark beef burger
+                                </div>
+                                <div class="slider__title">
+                                    <p class="slider__title-text">
+                                        Ваш старый добрый знакомый, с рубленым бифштексом
+                                        из 100% говядины,темя кусочками нежнейшего сыра
+                                        эмменталь,двумя помидорами,луком, салатом и соусом гриль
+                                        теперь с добавлением экзотического соуса чураско.
+                                    </p>
+                                    <div class="slider__title-price">
+                                        <h3 class="section-title section-title--color-red">
+                                            500<span class="section-title section-title--color-red-small">рублей</span>
+                                        </h3>
+                                        <a href="" class="btn">Заказать 3</a>
+                                    </div>    
+                                </div>                       
+                                    
+                            </div>       
+                        </div>    
+                    </div>                        
+                </div>
+                <a href="" class="right-arrow" id="right"></a>
+            </div>
+            
+
+        </section>
+
+        <section class="section team" id="team">
+            <div class="team__section" >
                 <div class="section-title">
                     Команда
                 </div>
-                <ul class="team__list">
-                    <li class="team__item"><a class="team__trigger" href="#">дэниэл редклифф</a>
+                <ul class="team__list" id="team-section">
+                    <li class="team__item">
+                        <a class="team__trigger" href="#">дэниэл редклифф</a>
                         <div class="team__content">
                             <div class="team__pic">
-                                <div class="team__img" style="background-image: url('./img/content/team')"></div>
+                                <div class="team__img" style="background-image: url('./img/content/team/2.png')"></div>
                             </div>
                             <div class="team__text">
                                 <div class="team__title">Шеф-повар</div>
@@ -132,7 +310,8 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team__item active"><a class="team__trigger" href="#">ричард джеймс</a>
+                    <li class="team__item">
+                        <a class="team__trigger" href="#">ричард джеймс</a>
                         <div class="team__content">
                             <div class="team__pic">
                                 <div class="team__img" style="background-image: url('./img/content/team/2.png')"></div>
@@ -146,7 +325,7 @@
                     <li class="team__item"><a class="team__trigger" href="#">Джейк Финн</a>
                         <div class="team__content">
                             <div class="team__pic">
-                                <div class="team__img" style="background-image: url('./img/content/team')"></div>
+                                <div class="team__img" style="background-image: url('./img/content/team/2.png')"></div>
                             </div>
                             <div class="team__text">
                                 <div class="team__title">Менеджер</div>
@@ -157,7 +336,7 @@
                     <li class="team__item"><a class="team__trigger" href="#">Николай Иванов</a>
                         <div class="team__content">
                             <div class="team__pic">
-                                <div class="team__img" style="background-image: url('./img/content/team')"></div>
+                                <div class="team__img" style="background-image: url('./img/content/team/2.png')"></div>
                             </div>
                             <div class="team__text">
                                 <div class="team__title">Шоколатье</div>
@@ -168,11 +347,17 @@
                 </ul>
             </div>
         </section>
-        <section class="section acco">
+        <section class=" section work" id="work">
+            <div class="container">
+                <h2 class="section-title section-title--color-black section-title--centered">Как мы работаем</h2>
+                <video width="100%" height="400px" src="https://html5book.ru/examples/media/martynko.mp4" controls></video>
+            </div>
+        </section>
+        <section class="section acco" id="acco">
             <div class="section-title section-title--color-white acco__title">Меню</div>
-            <ul class="menu-acco">
-              <li class="menu-acco__item active">
-                <a class="menu-acco__trigger" href="#" style="background-image: url('./img/bg/menu/meats.jpg')">
+            <ul class="menu-acco" id="accord">
+              <li class="menu-acco__item">
+                <a class="menu-acco__trigger" href="javascript:;" style="background-image: url('./img/bg/menu/meats.jpg')">
                 <div class="menu-acco__trigger-text">Для мясоедов</div></a>
                 <div class="menu-acco__content">
                   <div class="menu-acco__text">
@@ -181,7 +366,8 @@
                   </div>
                 </div>
               </li>
-              <li class="menu-acco__item"><a class="menu-acco__trigger" href="#" style="background-image: url('./img/bg/menu/vegans.jpg')">
+              <li class="menu-acco__item">
+                  <a class="menu-acco__trigger" href="javascript:;" style="background-image: url('./img/bg/menu/vegans.jpg')">
                   <div class="menu-acco__trigger-text">Вегетарианское</div></a>
                 <div class="menu-acco__content">
                   <div class="menu-acco__text">
@@ -190,7 +376,8 @@
                   </div>
                 </div>
               </li>
-              <li class="menu-acco__item"><a class="menu-acco__trigger" href="#" style="background-image: url('./img/bg/menu/diets.jpg')">
+              <li class="menu-acco__item">
+                  <a class="menu-acco__trigger" href="javascript:;" style="background-image: url('./img/bg/menu/diets.jpg')">
                   <div class="menu-acco__trigger-text">Диетическое</div></a>
                 <div class="menu-acco__content">
                   <div class="menu-acco__text">
@@ -202,7 +389,7 @@
             </ul>
           </section>
     
-        <section class="section reviews">
+        <section class="section reviews" id="reviews">
             <ul class="reviews__list">
                 <li class="reviews__item review">
                     <img src="./img/content/reviews/1.jpg" alt="" class="review__avatar">
@@ -380,8 +567,10 @@
                   </div>
                 </div>
         </section>
-        <section class="section map">
-            <div class="yandex-map" id="map"></div>
+        <section class="section map" id="contacts">
+            <div class="yandex-map" id="map">
+              <iframe src="https://yandex.ru/map-widget/v1/-/CCWyuK0Y" width="100%" height="100%" frameborder="1" allowfullscreen="true"></iframe>
+            </div>
 
             <footer class="footer">
                 <div class="container footer__container">
@@ -435,6 +624,13 @@
         <li class="fix-menu__item"></li>
         <li class="fix-menu__item"></li>
     </ul>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/hamburger-menu.js"></script>
+    <script src="./js/accordeon.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/team.js"></script>
+
 </body>
 
 </html>
